@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f7f4" />
+    <meta name="description" content="Undangan pernikahan dengan cerita dan galeri foto kedua mempelai." />
+
+    <title>The Wedding — Adrian & Aurelia</title>
+
+    <link rel="stylesheet" href="css/invitation.css" />
+    <script src="js/wedding-data.js" defer></script>
+    <script src="js/invitation.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Progress scroll -->
+    <div class="scroll-progress" aria-hidden="true">
+      <span id="scroll-progress-bar"></span>
+    </div>
+
+    <!-- Navigasi minimalis -->
+    <header class="site-header">
+      <a class="brand-mark" href="#home" aria-label="Kembali ke awal undangan"> A <span>&</span> A </a>
+
+      <a class="header-link" href="#details">THE WEDDING</a>
+    </header>
+
+    <main>
+      <!-- SCENE 1: OPENING -->
+      <section class="hero scene" id="home">
+        <div class="hero-photo parallax-layer">
+          <img src="assets/images/photo-01-cover.jpg" alt="Foto utama kedua mempelai" fetchpriority="high" />
+        </div>
+
+        <div class="hero-shade"></div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">THE BEGINNING OF FOREVER</p>
+
+          <h1>
+            <span id="hero-groom">Adrian</span>
+            <span class="hero-ampersand">&</span>
+            <span id="hero-bride">Aurelia</span>
+          </h1>
+
+          <span class="fine-line"></span>
+
+          <p class="hero-date" id="hero-date">20 JUNI 2027</p>
+
+          <a class="scroll-cue" href="#story">
+            <span>SCROLL TO EXPLORE</span>
+            <span class="scroll-cue-line"></span>
+          </a>
+        </div>
+
+        <span class="hero-index">01 / 04</span>
+      </section>
+
+      <!-- SCENE 2: CERITA -->
+      <section class="story section-paper" id="story">
+        <div class="story-heading reveal">
+          <p class="eyebrow dark-eyebrow">A LITTLE STORY ABOUT US</p>
+          <h2>Setiap kisah indah<br />memiliki awal.</h2>
+          <p class="section-description">Tentang dua hati yang bertemu, tumbuh bersama, dan memilih untuk melangkah menuju masa depan.</p>
+        </div>
+
+        <div class="story-composition">
+          <figure class="story-photo parallax-card reveal">
+            <img src="assets/images/photo-02-story.jpg" alt="Potret perjalanan kedua mempelai" loading="lazy" />
+            <figcaption>CHAPTER I — THE MEETING</figcaption>
+          </figure>
+
+          <div class="story-note parallax-text reveal">
+            <span class="note-number">I.</span>
+            <p>“Dari pertemuan sederhana, tumbuh cerita yang ingin kami jaga selamanya.”</p>
+          </div>
+        </div>
+
+        <div class="story-closing reveal">
+          <span class="fine-line"></span>
+          <p>And our story continues...</p>
+        </div>
+      </section>
+
+      <!-- SCENE 3: GALERI PARALLAX -->
+      <section class="gallery" id="gallery">
+        <div class="gallery-intro reveal">
+          <p class="eyebrow">FRAGMENTS OF FOREVER</p>
+          <h2>Moments we<br />want to remember.</h2>
+        </div>
+
+        <div class="gallery-stage">
+          <figure class="gallery-photo gallery-photo-one parallax-card reveal">
+            <img src="assets/images/photo-03-gallery.jpg" alt="Momen kebersamaan kedua mempelai" loading="lazy" />
+            <figcaption>II — TOGETHER</figcaption>
+          </figure>
+
+          <p class="gallery-quote quote-one parallax-text reveal">The little things<br />become the memories.</p>
+
+          <figure class="gallery-photo gallery-photo-two parallax-card reveal">
+            <img src="assets/images/photo-04-gallery.jpg" alt="Potret romantis kedua mempelai" loading="lazy" />
+            <figcaption>III — THE MOMENTS</figcaption>
+          </figure>
+
+          <figure class="gallery-photo gallery-photo-three parallax-card reveal">
+            <img src="assets/images/photo-05-gallery.jpg" alt="Potret pasangan menyambut hari pernikahan" loading="lazy" />
+            <figcaption>IV — FOREVER BEGINS</figcaption>
+          </figure>
+
+          <p class="gallery-quote quote-two parallax-text reveal">One love.<br />One lifetime.</p>
+        </div>
+
+        <div class="gallery-ending reveal">
+          <span class="fine-line"></span>
+          <p>TO BE CONTINUED, TOGETHER.</p>
+        </div>
+      </section>
+
+      <!-- SCENE 4: DETAIL PERNIKAHAN -->
+      <section class="details section-paper" id="details">
+        <div class="details-heading reveal">
+          <p class="eyebrow dark-eyebrow">THE DAY WE SAY I DO</p>
+          <h2>Hari istimewa<br />kami.</h2>
+          <p class="section-description">Dengan penuh rasa syukur, kami mengundang Anda untuk menjadi bagian dari hari bahagia kami.</p>
+        </div>
+
+        <div class="guest-card reveal">
+          <p class="guest-label">Kepada Yth.</p>
+          <h3 id="invitation-guest">Tamu Undangan</h3>
+          <p>Merupakan suatu kehormatan bagi kami apabila Anda berkenan hadir dan memberikan doa restu.</p>
+        </div>
+
+        <div class="event-card reveal">
+          <span class="event-symbol" aria-hidden="true">✳</span>
+          <p class="eyebrow dark-eyebrow">THE WEDDING DAY</p>
+          <h3 id="event-date">20 Juni 2027</h3>
+
+          <div class="event-divider"></div>
+
+          <div class="event-item">
+            <span>AKAD NIKAH</span>
+            <p id="akad-time">08.00 WIB — sesuaikan</p>
+          </div>
+
+          <div class="event-item">
+            <span>RESEPSI</span>
+            <p id="reception-time">11.00 WIB — sesuaikan</p>
+          </div>
+
+          <div class="event-item">
+            <span>LOKASI</span>
+            <p id="event-location">Nama gedung atau lokasi acara</p>
+            <p class="event-address" id="event-address">Alamat lengkap lokasi acara</p>
+          </div>
+
+          <a class="outline-button" id="maps-link" href="#details" target="_blank" rel="noopener noreferrer"> Lihat Lokasi <span aria-hidden="true">↗</span> </a>
+        </div>
+
+        <div class="closing-note reveal">
+          <p class="eyebrow dark-eyebrow">WITH LOVE AND GRATITUDE</p>
+          <h2>We can't wait<br />to see you.</h2>
+          <p id="closing-names">Adrian & Aurelia</p>
+          <span class="fine-line"></span>
+          <p class="closing-small">TERIMA KASIH ATAS DOA DAN RESTUNYA</p>
+        </div>
+      </section>
+    </main>
+    <!-- SECTION: PROTOTYPE FEEDBACK -->
+    <section class="feedback-section" id="feedback">
+      <div class="feedback-inner">
+        <p class="eyebrow dark-eyebrow">A NOTE FROM THE DEVELOPER</p>
+
+        <span class="feedback-ornament" aria-hidden="true">✳</span>
+
+        <h2>Setiap masukan<br />berarti bagi saya.</h2>
+
+        <p class="feedback-message">
+          Hai, terima kasih telah melihat website saya sampai akhir. Jika berkenan, bolehkah Anda memberikan masukan untuk pengembangan website ini ke depannya? Menurut Anda, apa saja yang masih perlu diperbaiki atau ditingkatkan?
+
+          <span> Saya mengucapkan terima kasih sebanyak-banyaknya atas waktu dan masukan yang Anda berikan. 🤍 </span>
+        </p>
+
+        <form class="feedback-form" id="feedback-form">
+          <label for="feedback-name">Nama (opsional)</label>
+          <input type="text" id="feedback-name" name="name" placeholder="Boleh dikosongkan" maxlength="80" />
+
+          <label for="feedback-message">Masukan untuk website ini</label>
+          <textarea id="feedback-message" name="message" rows="5" minlength="5" maxlength="2000" placeholder="Tuliskan pendapat, kritik, atau ide Anda di sini..." required></textarea>
+
+          <button type="submit" class="feedback-submit">Kirim Masukan <span aria-hidden="true">↗</span></button>
+
+          <p class="feedback-status" id="feedback-status" role="status">Masukan Anda sangat berarti untuk pengembangan prototype ini.</p>
+        </form>
+
+        <div class="developer-credit">
+          <span class="credit-line"></span>
+          <p>DESIGNED & DEVELOPED BY</p>
+          <h3>RODIANSYAH GALLERY</h3>
+          <span class="credit-caption">AN EXPERIMENT IN DIGITAL WEDDING INVITATIONS</span>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <span>MADE WITH LOVE</span>
+      <span>ADRIAN & AURELIA</span>
+    </footer>
+
+    <!-- Kontrol musik yang tetap terlihat ketika scroll -->
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Putar musik" aria-pressed="false">
+      <span class="music-icon" aria-hidden="true">♪</span>
+      <span id="music-status">Putar Musik</span>
+    </button>
+
+    <audio id="page-music" src="assets/music/background.mp3" preload="auto" loop></audio>
+  </body>
+</html>

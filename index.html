@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f7f4" />
+
+    <title>The Wedding Invitation</title>
+
+    <link rel="stylesheet" href="css/cover.css" />
+
+    <script src="js/wedding-data.js" defer></script>
+    <script src="js/cover.js" defer></script>
+  </head>
+
+  <body>
+    <main class="cover">
+      <!-- Dekorasi botanical: tidak menghalangi klik atau tulisan -->
+      <svg class="botanical-frame" viewBox="0 0 1000 1400" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <!-- Satu bunga dengan kelopak bergaya ilustrasi tinta -->
+          <g id="botanical-flower" class="flower-art">
+            <g class="petals">
+              <ellipse cx="0" cy="-17" rx="8" ry="17" />
+              <ellipse cx="0" cy="-17" rx="8" ry="17" transform="rotate(60)" />
+              <ellipse cx="0" cy="-17" rx="8" ry="17" transform="rotate(120)" />
+              <ellipse cx="0" cy="-17" rx="8" ry="17" transform="rotate(180)" />
+              <ellipse cx="0" cy="-17" rx="8" ry="17" transform="rotate(240)" />
+              <ellipse cx="0" cy="-17" rx="8" ry="17" transform="rotate(300)" />
+            </g>
+            <circle class="flower-center" cx="0" cy="0" r="5" />
+            <circle class="flower-detail" cx="-1.5" cy="-1.5" r="1.2" />
+            <circle class="flower-detail" cx="2" cy="1.5" r="1" />
+          </g>
+
+          <!-- Daun kecil pada ranting -->
+          <g id="botanical-leaf" class="leaf-art">
+            <path d="M0 0 C-3 -12, -23 -19, -28 -8 C-24 3, -9 7, 0 0Z" />
+            <path class="leaf-vein" d="M0 0 Q-14 -5 -25 -8" />
+          </g>
+
+          <g id="botanical-bud" class="bud-art">
+            <path d="M0 0 C-11 -9,-8 -23,0 -27 C8 -20,10 -9,0 0Z" />
+            <path class="leaf-vein" d="M0 0 Q1 -12 0 -25" />
+          </g>
+        </defs>
+
+        <!-- Sisi kiri tumbuh lebih dahulu -->
+        <g class="vine vine-left">
+          <path
+            class="stem"
+            d="M-30 1330
+         C75 1250, 155 1190, 95 1085
+         S-15 900, 80 795
+         S175 630, 85 535
+         S-5 370, 65 270
+         S130 135, 85 55"
+          />
+
+          <path
+            class="branch"
+            d="M48 1195 C105 1160, 155 1150, 190 1090
+         M70 965 C25 925, 5 885, 5 840
+         M100 745 C150 700, 175 665, 175 620
+         M66 480 C15 455, 0 420, 0 385
+         M80 270 C120 240, 145 210, 145 175"
+          />
+
+          <use href="#botanical-leaf" x="78" y="1245" transform="rotate(-28 78 1245)" />
+          <use href="#botanical-leaf" x="127" y="1157" transform="rotate(155 127 1157)" />
+          <use href="#botanical-leaf" x="45" y="1000" transform="rotate(20 45 1000)" />
+          <use href="#botanical-leaf" x="20" y="900" transform="rotate(190 20 900)" />
+          <use href="#botanical-leaf" x="125" y="715" transform="rotate(-25 125 715)" />
+          <use href="#botanical-leaf" x="45" y="470" transform="rotate(20 45 470)" />
+          <use href="#botanical-leaf" x="105" y="245" transform="rotate(-15 105 245)" />
+          <use href="#botanical-leaf" x="80" y="130" transform="rotate(170 80 130)" />
+
+          <use href="#botanical-bud" x="187" y="1092" transform="rotate(30 187 1092)" />
+          <use href="#botanical-bud" x="5" y="840" transform="rotate(-25 5 840)" />
+          <use href="#botanical-bud" x="175" y="620" transform="rotate(20 175 620)" />
+
+          <g class="bloom bloom-one" transform="translate(145 1080) rotate(-12)">
+            <use href="#botanical-flower" />
+          </g>
+          <g class="bloom bloom-two" transform="translate(26 875) rotate(15) scale(.8)">
+            <use href="#botanical-flower" />
+          </g>
+          <g class="bloom bloom-three" transform="translate(143 650) rotate(12) scale(.72)">
+            <use href="#botanical-flower" />
+          </g>
+        </g>
+
+        <!-- Sisi kanan menyusul setelah sisi kiri -->
+        <g class="vine vine-right">
+          <path
+            class="stem"
+            d="M1030 1360
+         C900 1270, 855 1170, 925 1080
+         S1035 900, 935 805
+         S835 630, 925 535
+         S1010 365, 940 275
+         S880 140, 925 45"
+          />
+
+          <path
+            class="branch"
+            d="M955 1190 C900 1150, 860 1130, 830 1080
+         M935 960 C980 925, 1000 885, 1000 840
+         M900 740 C850 700, 825 665, 825 620
+         M940 475 C990 445, 1000 415, 1000 380
+         M925 260 C885 225, 865 195, 865 165"
+          />
+
+          <use href="#botanical-leaf" x="935" y="1250" transform="rotate(205 935 1250)" />
+          <use href="#botanical-leaf" x="875" y="1150" transform="rotate(25 875 1150)" />
+          <use href="#botanical-leaf" x="965" y="990" transform="rotate(190 965 990)" />
+          <use href="#botanical-leaf" x="980" y="900" transform="rotate(5 980 900)" />
+          <use href="#botanical-leaf" x="875" y="710" transform="rotate(205 875 710)" />
+          <use href="#botanical-leaf" x="970" y="470" transform="rotate(190 970 470)" />
+          <use href="#botanical-leaf" x="900" y="240" transform="rotate(200 900 240)" />
+          <use href="#botanical-leaf" x="925" y="120" transform="rotate(10 925 120)" />
+
+          <use href="#botanical-bud" x="830" y="1080" transform="rotate(-30 830 1080)" />
+          <use href="#botanical-bud" x="1000" y="840" transform="rotate(25 1000 840)" />
+          <use href="#botanical-bud" x="825" y="620" transform="rotate(-20 825 620)" />
+
+          <g class="bloom bloom-four" transform="translate(855 1070) rotate(12)">
+            <use href="#botanical-flower" />
+          </g>
+          <g class="bloom bloom-five" transform="translate(978 875) rotate(-15) scale(.8)">
+            <use href="#botanical-flower" />
+          </g>
+          <g class="bloom bloom-six" transform="translate(855 650) rotate(-12) scale(.72)">
+            <use href="#botanical-flower" />
+          </g>
+        </g>
+      </svg>
+      <div class="top-label reveal" style="--delay: 0ms">
+        <span>THE WEDDING</span>
+        <span id="year">2027</span>
+      </div>
+
+      <section class="cover-content">
+        <p class="eyebrow reveal" style="--delay: 150ms">Together with our families</p>
+
+        <p class="intro reveal" style="--delay: 300ms">Request the pleasure of your presence at the wedding celebration of</p>
+
+        <div class="couple reveal" style="--delay: 450ms">
+          <h1 id="groom">Adrian</h1>
+          <span class="ampersand">&amp;</span>
+          <h1 id="bride">Aurelia</h1>
+        </div>
+
+        <div class="ornament reveal" style="--delay: 600ms">
+          <span></span>
+        </div>
+
+        <p class="date reveal" id="wedding-date" style="--delay: 700ms">20 JUNI 2027</p>
+
+        <div class="guest reveal" style="--delay: 850ms">
+          <p class="guest-label">Kepada Yth.</p>
+
+          <p class="guest-name" id="guest-name">Tamu Undangan</p>
+
+          <p class="guest-description">Dengan penuh kebahagiaan, kami mengundang Anda untuk hadir di hari istimewa kami.</p>
+        </div>
+
+        <button class="open-button reveal" id="open-invitation" style="--delay: 1000ms" type="button">
+          <span>Buka Undangan</span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <p class="music-note reveal" style="--delay: 1100ms">
+          <span class="music-indicator" aria-hidden="true">♪</span>
+          Musik akan mengiringi undangan ini
+        </p>
+      </section>
+
+      <div class="bottom-label reveal" style="--delay: 500ms">
+        <span>MADE WITH LOVE</span>
+        <span id="date-short">20 · 06 · 2027</span>
+      </div>
+      <!-- Musik milikmu sendiri -->
+      <audio id="wedding-music" src="assets/music/background.mp3" preload="auto" loop></audio>
+    </main>
+  </body>
+</html>
